@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'>
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+    <header>
+        <div class="user">
+            <img src="pf.jpg" alt="">
+            <h2>SUJAY SARKAR</h2>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#" onClick="myFunction('home')">Home</a></li>
+                <li><a href="#" onClick="myFunction('about')">About</a></li>
+                <li><a href="#" onClick="myFunction('skills')">Skills</a></li>
+<!--               <li><a href="#" onClick="myFunction('projects')">Projects</a></li>  -->
+                <li><a href="#" onClick="myFunction('contact')">Contact</a></li>
+            </ul>
+        </nav>
+        <h3>copyright © sujay.portfolio</h3>
+    </header>
+</div>
+<div class="container">
+    <section id="home" class="n">
+        <h2>Hello .....</h2>
+        <h2>My self Sujay Sarkar</h2>
+        <h2>I'm a Programmer</h2>
+        <h3>WELCOME TO MY PAGE....</h3>
+        <div class="social">
+            <ul>
+                <li><a href="https://www.facebook.com/sujay.sarkar.37266136/" style="font-size: 25px; height: 30px; width: 30px;" class="fa fa-facebook"></a></li>
+                <li><a href="https://www.instagram.com/sujaysarkar.official/?fbclid=IwAR2ahtggl7c8j_LTvPejS8oTvhAhwYI8tESJwyNVDPdvdYS8IkWytbnftlM" style="font-size: 25px; height: 30px; width: 30px;" class="fa fa-instagram"></a></li>
+                <li><a href="https://twitter.com/SujayOrg" style="font-size: 25px; height: 30px; width: 30px;" class="fa fa-twitter"></a></li>
+                <li><a href="https://www.linkedin.com/in/sujay-sarkar-254031234?fbclid=IwAR15sHpKKa_MiIiMhKn2V-moTvAEPlKoVf2gYbct3QeT_qkqw1RUJ3g5Efo" style="font-size: 25px; height: 30px; width: 30px;" class="fa fa-linkedin"></a></li>
+                <li><a href="#" style="font-size: 25px; height: 30px; width: 30px;" class="fa fa-github"></a></li>
+            </ul>
+        </div>
+    </section>
+    <section id="about" class="n" style="display: none">
+        <h1>About Me</h1>
+        <i class="fa fa-user-o"></i>
+        <p>I'm Sujay Sarkar. I'm a student. I am a hard working, honest individual and
+            a good timekeeper, always willing to learn new skills. I am also friendly, helpful 
+            and polite and have a good sense of humour. I have good listening and communication skill. 
+            I have a creative mind and am always up for new challenges. I am well organized and always 
+            plan ahead to make sure I manage my time well.</p>
+            <div class="a-foot">
+                <div class="progress">
+                    <h2>Hard Working</h2>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h2>Dedication</h2>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h2>Creativity</h2>
+                    <div class="bar"><span></span></div>
+                </div>
+            </div>
+    </section>
+    <section id="skills" class="n" style="display: none">
+        <h1>My Skills</h1>
+        <div class="s-div1">
+            <h4><</h4><p>I have a sufficient knowledge about web development related languages
+                like HTML5, CSS, Java Script, PHP, My SQL and also object oriented programming 
+                languages like JAVA, Python and also procedural programming languages like C programming.
+                I know about operating systems like Windows, Linux.
+            </p><h4 style="text-align: right;">/></h4>
+        </div>
+        <div class="s-div2">
+            <div class="p-box">
+                <h2>HTML </h2>
+                <div class="bar"><span></span></div>
+            </div>
+            <div class="p-box">
+                <h2>CSS </h2>
+                <div class="bar"><span></span></div>
+            </div>
+            <div class="p-box">
+                <h2>Java Script</h2>
+                <div class="bar"><span></span></div>
+            </div>
+            <div class="p-box">
+                <h2>C </h2>
+                <div class="bar"><span></span></div>
+            </div>
+            <div class="p-box">
+                <h2>Java</h2>
+                <div class="bar"><span></span></div>
+            </div>
+            <div class="p-box">
+                <h2>Python</h2>
+                <div class="bar"><span></span></div>
+            </div>
+            <div class="p-box">
+                <h2>My SQL</h2>
+                <div class="bar"><span></span></div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="n" style="display: none"></section>
+    <section id="contact" class="n" style="display: none">
+        <h1>Contact Me</h1>
+        <div class="c-main">
+            <form method="post" action="mailto:emailtome.org@gmail.com" onsubmit="sendMail()">
+                <input type="text" id="name" name="name" class="c-box" placeholder="Name" required>
+                <input type="text" id="number" name="number" class="c-box" placeholder="Contact Number" required>
+                <input type="email" id="email" name="email" class="c-box" placeholder="Email-Id" required style="width: 100%;">
+                <input type="text" id="subject" name="subject" class="c-box" placeholder="Subject" required style="width: 100%;">
+                <textarea name="message" id="message" cols="30" rows="10" class="c-msgbox" placeholder="message"></textarea>
+                <input type="reset" value="Reset" class="c-btn">
+                <input type="submit" value="Send" class="c-btn">
+            </form>
+            <div class="address">
+                <div class="add">
+                    <h3><i class="fa fa-map-marker" aria-hidden="true"></i>Address</h3>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Basirhat, North 24 Pgs, 743428</p>
+                </div>
+                <div class="add">
+                    <h3><i class="fa fa-envelope-o" aria-hidden="true"></i>Email-ID</h3>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;emailtome.org@gmail.com</p>
+                </div>
+                <div class="add">
+                    <h3><i class="fa fa-phone" aria-hidden="true"></i>Contact Number</h3>
+                    <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8617534162</p>
+                </div>
+            </div>
+        </div>
+    </section>       
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
